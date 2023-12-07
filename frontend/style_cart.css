@@ -1,0 +1,273 @@
+:root {
+    --poppins: 'Poppins', sans-serif;
+    /* 200;300;400;500;600;700;800 */
+    --colornova: #6c15bd;
+    --colornovacontraste: #522879;
+    --colornovaverde: #41bd3f;
+    --color1: #0fffc6;
+    --color2: #d3ff80;
+    --color3: #030221;
+    --color4: #5534ba;
+    --color45: #9E5AFF;
+    --color5: #d992f7;
+
+    --Monsterrat: 'Montserrat', sans-serif;
+    --Nunito: 'Nunito', sans-serif;
+    --fontsizeH4: 1.7rem;
+    --fontsizeH3: 2.2rem;
+    --fontsizeH2: 5rem;
+
+    --amarillo: #FBD66D;
+    --color-acento: #ee6130;
+    --color-acento-claro: #ee613033;
+    --color-texto: black;
+
+}
+
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+/* -----Boton para volver al inicio */
+
+
+/* -----------------Inicio estilos del HOME----------- */
+.main{
+    background: whitesmoke url("./multimedia/fondo.png") fixed ;
+    min-height: 100vh;
+}
+.escondido {
+    display: none;
+}
+
+
+.icon_cart{
+    width: 2rem;
+}
+.icon_container .icon_cart{
+    margin:  17px auto ;
+}
+.text_carrito{
+    position: absolute;
+    border: 1px solid white;
+    display: flex;
+    padding: 20px 0px;
+    width: 100px;
+    border-radius: 10px;
+    transition: .5s;
+    background: rgba(97, 32, 188, 0.1);
+    margin: auto;
+    font-size: 1.1rem;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    overflow: visible;
+    transition: .5s;
+}
+
+.icon_user{
+    width: 3rem;
+    position: relative;
+
+}
+
+.submenu_user{
+    border: 1px solid white;
+    position: absolute;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto;
+    padding: 20px 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: rgba(97, 32, 188, 0.1);
+    font-size: 1.1rem;
+    opacity: 0;
+    visibility: hidden;
+    overflow: visible;
+    transition: .5s;
+    z-index: 1000;
+}
+.item_user{
+    display: flex;
+    gap: 5px;
+}
+.container_logo{
+    position: absolute;
+    display: flex;
+    align-items:center;
+    position: relative;
+
+}
+.text_logo{
+    position: absolute;
+    margin-left: 140%;
+    display: block;
+    /* padding: 20px; */
+    font-size: 2rem;
+
+} 
+
+.img_log{
+    height: 100px;
+    width:100px;
+    transform: rotate(-22deg);
+    margin: 30% 50%;
+}
+
+
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container_nav{
+    display: flex;
+    width: 100vh;
+
+
+}
+
+.container_list{
+    height: 150px;
+    padding-right: 50px;
+    width: 100%;
+}
+.container_nav{
+    width: 100%;
+}
+.item_link{
+    display: block;
+    padding: 20px;
+    font-size: 1.1em;
+
+}
+.submenu .item_link{
+    padding-left: 10%;
+    text-decoration: none;
+
+}
+.container_list{
+    display: flex;
+    justify-content: flex-end;
+    gap : 30px;
+    align-items: center;
+}
+.container_submenu{
+    position: relative;
+}
+.submenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 250px;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid white ;
+    padding: 30px 0px;
+    padding-left: 10px;
+    font-size: 1.5em;
+    font-weight: lighter;
+    gap: 20px;
+    transition: .2s;
+}
+.container_submenu:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+    transition: .7s;
+    text-shadow: 0 0 0px rgb(255, 255, 255);
+    background: rgba(97, 32, 188, 0.1);
+    border-radius: 10px;
+
+}
+.submenu .item_link_:hover{
+    transition: .5s;
+    border-bottom: 1px solid white;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    margin-left: 10px;
+
+}
+.item_link{
+    font-size: 2em;
+}
+.item_list .registro{
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 10px;
+}
+/*------------------------------Fin de estilos del HOME------------------- */
+
+
+
+
+
+
+
+
+/* ======================================= SECCIÓN NOSOTROS */
+
+
+
+
+
+
+
+
+
+
+.pagination-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: #8e00ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+.pagination-info {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+.btn_carrito{
+    font-size: larger;
+    background-color: var(--color-acento);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    border: unset;
+    cursor: pointer;
+    padding: auto;
+    /* margin: auto; */
+}
+
+#cuenta-carrito {
+    position: absolute;
+    /* el nav es el realtive  */
+    background-color: var(--color-acento);
+    border-radius: 100%;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    aspect-ratio: 1;
+    text-align: center;
+    /* margin-bottom: 15px; */
+}
+

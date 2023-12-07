@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="cart.css">
+	<script src="./js/cartService.js" defer></script>
+	<script src="./js/cart.js" defer></script>
+	<link rel="stylesheet" href="style_cart.css">
+	<title>Carrito</title>
+</head>
+<body>
+	<main>
+		<header>
+			<nav class="container_nav">
+				<div class="container_logo">
+					<a href="#Inicio" id="Volver"><img  width="50px" height="50px" class="img_log"src="./multimedia/cohete_logo.png" alt="Logo" ></a>
+					<h4 class="text_logo">NOVA</h4>
+				</div>
+				
+				<ul class="container_list" id="container_list">
+					<li class="item_list  container_submenu" ><a class="item_link btn_submenu"   href="#Cursos">Cursos</a></li>
+					<li class="item_list"><a class="item_link" href="#Nosotros">Nosotros</a></li>
+					<li class="item_list"><a class="item_link" href="#Contacto">Contacto</a></li>
+		
+					<li class="icon_container" id="icon_cart">
+		
+						<a href="./cart.html" id="cart"><img class="icon_cart" src="./multimedia/cart-fill.svg" alt=""></a>
+						<span id="cuenta-carrito">0</span></a>
+						<div class="text_carrito"><a href="./cart.html">Ir al carrito</a></div>
+					</li>
+					
+					<li class="icon_container" id="icon_user">
+						<a href="./pages/perfil.html" class="icon_user"><img class="icon_user" src="./multimedia/person-fill.svg" alt=""></a>
+						
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<h1 class="titulo_carrito">Carrito de compras</h1>
+		<p id="carrito-vacio">Ups! El carrito está vacío, <a href="./index.html">elige algunos productos</a></p>
+		<section id="cart-container">
+
+		</section>
+
+<section id="totales">
+    <p>Total unidades: <span id="cantidad">0</span></p>
+    <p>Total precio: $<span id="precio">0</span></p>
+    <button disabled class="comprar">Comprar</button>
+    <button id="reiniciar" class="reiniciar">Reiniciar</button>
+</section>
+</main>
+
+
+</body>
+</html>

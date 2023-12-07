@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.header {
+    background-color: #000;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+}
+
+.curso-info {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px;
+}
+
+.curso-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.curso-details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.curso-details h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0;
+    color: #fff;
+}
+
+.curso-details p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.profesor {
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.profesor img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comprar-btn, .descargar-btn {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.comprar-btn:hover, .descargar-btn:hover {
+    background-color: #0056b3;
+}
+
+.payment-banner {
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.payment-banner h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.payment-logos img {
+    max-height: 40px;
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .curso-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .curso-details, .profesor {
+        flex: none;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
